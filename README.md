@@ -13,11 +13,11 @@ This Dockerfile is based on ***node:alpine*** docker image.
 ### Build the docker image
 
     $ cd docker-ponte
-    $ docker build . --tag docker:ponte
+    $ docker build . --tag jormc/ponte
 
 ### Run the image 
 
-    $ docker run -d -p 1883:1883 -p 3000:3000 docker:ponte
+    $ docker run -ti -p 1883:1883 -p 3000:3000 -p 5683:5683 jormc/ponte
 
 
 ## Next steps
